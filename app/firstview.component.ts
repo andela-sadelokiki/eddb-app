@@ -23,4 +23,4 @@ export class FirstViewComponent  {
     constructor(){
         this.procedureLists = ['Blunt force trauma', 'broken bones', 'head injury']
     }
-    
+ }   
