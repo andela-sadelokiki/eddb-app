@@ -1,4 +1,8 @@
 <h3>This is the Firstviewcomponent</h3>
+<button (click)="toggleProcedureLists()"> Trauma Procedures Tab</button>
+<div *ngIf="showProcedureLists">
+<h4>List of Procedures</h4>
 <ul>
     <li *ngFor="let procedureList of procedureLists"> {{ procedureList }} </li>
 </ul>
+</div>
