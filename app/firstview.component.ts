@@ -18,7 +18,7 @@ export class FirstViewComponent  {
     //     this.procedureListService.delete
     // }
     name = 'Angular'; 
-    procedureList: string[];
+    procedureList: string[]; 
     showProcedureLists: boolean;
 
 
@@ -44,5 +44,9 @@ export class FirstViewComponent  {
         else {
             alert('cannot me empty')
         }
+    }
+
+    deleteProcedure(i){
+        this.procedureLists.splice(i, 1);
     }
 }   

@@ -5,13 +5,13 @@
 <div *ngIf="showProcedureLists">
     <h4>List of Procedures</h4>
     <ul>
-        <li *ngFor="let procedureList of procedureLists"> {{ procedureList }} </li>
+        <li *ngFor="let procedureList of procedureLists; let i = index"> {{ procedureList }} <button (click)="deleteProcedure()">DELETE</button> </li>
     </ul>
 
     <form>
          <!--<form (submit)="addProcedure(procedureList.value)">-->
         <label> Add Procedure </label>
         <input type="text" #procedureList/>
-        <button (click)="addProcedure(procedureList.value)"></button>
+        <button (click)="addProcedure(procedureList.value)">Add</button>
     </form>
 </div>
