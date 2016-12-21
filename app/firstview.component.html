@@ -1,5 +1,5 @@
 <h3>This is the Firstviewcomponent</h3>
-<button (click)="toggleProcedureLists()"> Trauma Procedures Tab</button>
+<button (click)="toggleProcedureLists()"> {{showProcedureLists ? "Hide Trauma Procedures" : "Show Trauma Procedures"}}</button>
 <div *ngIf="showProcedureLists">
 <h4>List of Procedures</h4>
 <ul>
