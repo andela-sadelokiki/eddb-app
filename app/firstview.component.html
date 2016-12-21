@@ -1,8 +1,17 @@
 <h3>This is the Firstviewcomponent</h3>
+
+
 <button (click)="toggleProcedureLists()"> {{showProcedureLists ? "Hide Trauma Procedures" : "Show Trauma Procedures"}}</button>
 <div *ngIf="showProcedureLists">
-<h4>List of Procedures</h4>
-<ul>
-    <li *ngFor="let procedureList of procedureLists"> {{ procedureList }} </li>
-</ul>
+    <h4>List of Procedures</h4>
+    <ul>
+        <li *ngFor="let procedureList of procedureLists"> {{ procedureList }} </li>
+    </ul>
+
+    <form>
+         <!--<form (submit)="addProcedure(procedureList.value)">-->
+        <label> Add Procedure </label>
+        <input type="text" #procedureList/>
+        <button (click)="addProcedure(procedureList.value)"></button>
+    </form>
 </div>

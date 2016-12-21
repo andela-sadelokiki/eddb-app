@@ -35,4 +35,14 @@ export class FirstViewComponent  {
             this.showProcedureLists = false;
         }
     }
+
+    addProcedure(ProcedureList){
+        console.log(ProcedureList)
+        if(ProcedureList.length > 0){
+            this.procedureLists.push(ProcedureList);
+        }
+        else {
+            alert('cannot me empty')
+        }
+    }
 }   
