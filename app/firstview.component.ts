@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 // import { ProcedureListService } from './procedurelist.service';
 
 @Component({
   selector: 'first-view',
   templateUrl: 'app/firstview.component.html'
 })
-export class FirstViewComponent  { 
+export class FirstViewComponent  {
+    @Input() procedureObject; 
     // procedureLists;
 
     // constructor(private procedureListService: ProcedureListService){}

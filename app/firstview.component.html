@@ -14,4 +14,12 @@
         <input type="text" #procedureList/>
         <button (click)="addProcedure(procedureList.value)">Add</button>
     </form>
+    <h4>Details of Procedures</h4>
+    <ul>
+        <li>{{ procedureObject.title }}</li>
+        <li>{{ procedureObject.category}}</li>
+        <li>{{ procedureObject.description}}</li>
+        <li>{{ procedureObject.id}}</li>
+        <li>{{ procedureObject.date}}</li>
+    </ul>
 </div>
